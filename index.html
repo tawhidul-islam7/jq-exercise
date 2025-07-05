@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq hw</title>
+    <!-- fontawsam  -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  
+</head>
+<body>
+    <div class="container">
+
+  <h1>100 jQuery Practice Examples</h1>
+
+  <!-- Example 001 -->
+  <h2>001. Show Alert on Button Click</h2>
+  <button id="btnAlert">Click Me</button>
+
+  <!-- Example 002 -->
+  <h2>002. Hide Element</h2>
+  <div id="hideBox" style="background:#eee; padding:10px;">This is a box</div>
+  <button id="btnHide">Hide Box</button>
+
+  <!-- Example 003 -->
+  <h2>003. Show Hidden Element</h2>
+  <button id="btnShow">Show Box</button>
+
+  <!-- Example 004 -->
+  <h2>004. Toggle Element</h2>
+  <button id="btnToggle">Toggle Box</button>
+
+  <!-- Example 005 -->
+  <h2>005. Change Text of Paragraph</h2>
+  <p id="textPara">Old Text</p>
+  <button id="btnChangeText">Change Text</button>
+  <!-- Example 006 -->
+  <h2>006. Change HTML Content</h2>
+  <p id="htmlPara">Original <b>bold</b> text.</p>
+  <button id="btnChangeHtml">Change HTML</button>
+
+  <!-- Example 007 -->
+  <h2>007. Add Class to Element</h2>
+  <div id="addClassBox">Box</div>
+  <button id="btnAddClass">Add Class</button>
+
+  <!-- Example 008 -->
+  <h2>008. Remove Class from Element</h2>
+  <button id="btnRemoveClass">Remove Class</button>
+
+  <!-- Example 009 -->
+  <h2>009. Toggle Class on Element</h2>
+  <button id="btnToggleClass">Toggle Class</button>
+
+  <!-- Example 010 -->
+  <h2>010. Append Text to Paragraph</h2>
+  <p id="appendPara">Text:</p>
+  <button id="btnAppend">Append Text</button>
+<!-- Example 011 -->
+<h2>011. Prepend Text to Paragraph</h2>
+<p id="prependPara">Some content.</p>
+<button id="btnPrepend">Prepend Text</button>
+
+<!-- Example 012 -->
+<h2>012. Insert Before Paragraph</h2>
+<p id="beforePara">Target paragraph.</p>
+<button id="btnBefore">Insert Before</button>
+
+<!-- Example 013 -->
+<h2>013. Insert After Paragraph</h2>
+<p id="afterPara">Target paragraph.</p>
+<button id="btnAfter">Insert After</button>
+
+<!-- Example 014 -->
+<h2>014. Empty Paragraph</h2>
+<p id="emptyPara">This text will be removed.</p>
+<button id="btnEmpty">Empty</button>
+
+<!-- Example 015 -->
+<h2>015. Remove Element</h2>
+<div id="removeMe">Remove me!</div>
+<button id="btnRemoveElement">Remove</button>
+
+<!-- Example 016 -->
+<h2>016. Fade Out Box</h2>
+<div id="fadeBox" style="background:#ccc; padding:10px;">Fade Box</div>
+<button id="btnFadeOut">Fade Out</button>
+
+<!-- Example 017 -->
+<h2>017. Fade In Box</h2>
+<button id="btnFadeIn">Fade In</button>
+
+<!-- Example 018 -->
+<h2>018. Slide Up Box</h2>
+<div id="slideBox" style="background:#aaa; padding:10px;">Slide Box</div>
+<button id="btnSlideUp">Slide Up</button>
+
+<!-- Example 019 -->
+<h2>019. Slide Down Box</h2>
+<button id="btnSlideDown">Slide Down</button>
+
+<!-- Example 020 -->
+<h2>020. Slide Toggle Box</h2>
+<button id="btnToggleSlide">Toggle Slide</button>
+<!-- Example 021 -->
+<h2>021. Set Attribute (alt)</h2>
+<img id="image1" src="https://via.placeholder.com/100" alt="Old alt text">
+<button id="btnSetAttr">Set Alt Attribute</button>
+
+<!-- Example 022 -->
+<h2>022. Get Attribute (alt)</h2>
+<button id="btnGetAttr">Get Alt Attribute</button>
+
+<!-- Example 023 -->
+<h2>023. Set Input Value</h2>
+<input type="text" id="inputVal" value="Old Value">
+<button id="btnSetVal">Set Value</button>
+
+<!-- Example 024 -->
+<h2>024. Get Input Value</h2>
+<button id="btnGetVal">Get Value</button>
+
+<!-- Example 025 -->
+<h2>025. Event Binding with .on()</h2>
+<button id="btnOnClick">Click Me</button>
+<p id="onClickResult"></p>
+
+<!-- Example 026 -->
+<h2>026. Hover Change Background</h2>
+<div id="hoverBox" style="padding: 10px; background: #eee;">Hover Over Me</div>
+
+<!-- Example 027 -->
+<h2>027. Keyup Display Text</h2>
+<input type="text" id="inputKeyup" placeholder="Type here">
+<p id="keyUpResult"></p>
+
+<!-- Example 028 -->
+<h2>028. Focus Event</h2>
+<input type="text" id="focusInput" placeholder="Focus here">
+
+<!-- Example 029 -->
+<h2>029. Blur Event</h2>
+<input type="text" id="blurInput" placeholder="Blur here">
+
+<!-- Example 030 -->
+<h2>030. Clone Element</h2>
+<div id="cloneMe" style="padding: 10px; border: 1px solid black;">Clone Me</div>
+<div id="cloneContainer"></div>
+<button id="btnClone">Clone</button>
+<!-- Example 031 -->
+<h2>031. Count Text Length</h2>
+<p id="lengthPara">This is some text.</p>
+<button id="btnTextLength">Show Length</button>
+<p id="lengthResult"></p>
+
+<!-- Example 032 -->
+<h2>032. Set Multiple Attributes</h2>
+<img id="multiImage" src="https://via.placeholder.com/80" alt="Old">
+<button id="btnAttrMultiple">Set Attributes</button>
+
+<!-- Example 033 -->
+<h2>033. Animate Element</h2>
+<div id="animateBox" style="position:relative;width:50px;height:50px;background:red;"></div>
+<button id="btnAnimateBox">Animate</button>
+
+<!-- Example 034 -->
+<h2>034. Hide/Show Toggle</h2>
+<p id="toggleText">This text toggles.</p>
+<button id="btnHideShowToggle">Toggle</button>
+
+<!-- Example 035 -->
+<h2>035. Toggle ON/OFF Text</h2>
+<p id="textTogglePara">ON</p>
+<button id="btnToggleText">Toggle ON/OFF</button>
+
+<!-- Example 036 -->
+<h2>036. Highlight Even List Items</h2>
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Cherry</li>
+  <li>Date</li>
+</ul>
+<button id="btnFilterEven">Highlight Even Items</button>
+
+<!-- Example 037 -->
+<h2>037. Remove All List Items</h2>
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+<button id="btnRemoveItems">Remove Items</button>
+
+<!-- Example 038 -->
+<h2>038. Use .each() to Rename Items</h2>
+<ul id="eachList">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+<button id="btnEachLoop">Rename Items</button>
+
+<!-- Example 039 -->
+<h2>039. Get CSS Property</h2>
+<div id="cssBox" style="background: lightgreen; padding: 10px;">Check my color</div>
+<button id="btnGetCss">Get Background</button>
+
+<!-- Example 040 -->
+<h2>040. Set CSS Properties</h2>
+<button id="btnSetCss">Change Style</button>
+<!-- Example 041 -->
+<h2>041. Fade Toggle</h2>
+<div id="fadeToggleBox" style="padding: 10px; background: #ddd;">Toggle Me</div>
+<button id="btnFadeToggle">Fade Toggle</button>
+
+<!-- Example 042 -->
+<h2>042. Fade Then Slide</h2>
+<div id="comboBox" style="padding: 10px; background: orange;">Combo Box</div>
+<button id="btnSlideFadeCombo">Fade + Slide</button>
+
+<!-- Example 043 -->
+<h2>043. Disable Input</h2>
+<input type="text" id="inputDisable" value="Edit me">
+<button id="btnDisableInput">Disable</button>
+
+<!-- Example 044 -->
+<h2>044. Enable Input</h2>
+<button id="btnEnableInput">Enable</button>
+
+<!-- Example 045 -->
+<h2>045. Check if Checkbox is Checked</h2>
+<input type="checkbox" id="checkMe"> Check me<br>
+<button id="btnIsChecked">Check Status</button>
+
+<!-- Example 046 -->
+<h2>046. Select Option Change</h2>
+<select id="btnSelectChange">
+  <option value="Red">Red</option>
+  <option value="Blue">Blue</option>
+  <option value="Green">Green</option>
+</select>
+<p id="selectResult"></p>
+
+<!-- Example 047 -->
+<h2>047. Keypress Event</h2>
+<input type="text" id="btnKeyPress" placeholder="Type something...">
+<p id="keyPressResult"></p>
+
+<!-- Example 048 -->
+<h2>048. Mouse Enter</h2>
+<div id="btnMouseEnter" style="padding: 10px; background: #ccc;">Hover here</div>
+
+<!-- Example 049 -->
+<h2>049. Mouse Leave</h2>
+<div id="btnMouseLeave" style="padding: 10px; background: #ccc;">Move mouse out</div>
+
+<!-- Example 050 -->
+<h2>050. Scroll Event</h2>
+<div id="btnScrollEvent" style="height: 100px; overflow: auto; background: #eee;">
+  <div style="height: 300px;">Scroll me</div>
+</div>
+<p id="scrollStatus"></p>
+<!-- Example 051 -->
+<h2>051. Delayed Fade In</h2>
+<p id="delayedText" style="display:none;">This text fades in after delay</p>
+<button id="btnDelayShow">Show with Delay</button>
+
+<!-- Example 052 -->
+<h2>052. Chain Multiple Animations</h2>
+<div id="multiAnim" style="width:50px;height:50px;background:#444;position:relative;"></div>
+<button id="btnMultipleAnimate">Animate</button>
+
+<!-- Example 053 -->
+<h2>053. Stop Animation</h2>
+<button id="btnStopAnimation">Stop Animation</button>
+
+<!-- Example 054 -->
+<h2>054. Focus Input Changes Value</h2>
+<input type="text" id="btnFocusChange" placeholder="Focus here">
+
+<!-- Example 055 -->
+<h2>055. Blur Input Changes Value</h2>
+<input type="text" id="btnBlurChange" placeholder="Blur here">
+
+<!-- Example 056 -->
+<h2>056. Toggle Text Color (Red/Green)</h2>
+<p id="colorText" style="color:red;">Color Text</p>
+<button id="btnToggleTextColor">Toggle Color</button>
+
+<!-- Example 057 -->
+<h2>057. Submit Form Without Reload</h2>
+<form id="btnFormSubmit">
+  <input type="text" placeholder="Type here">
+  <button type="submit">Submit</button>
+</form>
+<p id="submitMsg"></p>
+
+<!-- Example 058 -->
+<h2>058. Change All Text Inputs</h2>
+<input type="text" value="A">
+<input type="text" value="B">
+<button id="btnChangeAllInputs">Change Inputs</button>
+
+<!-- Example 059 -->
+<h2>059. Check If Attribute Exists</h2>
+<div id="attrTest" data-role="box">Attribute Test</div>
+<button id="btnAttrCheck">Check Attribute</button>
+
+<!-- Example 060 -->
+<h2>060. Toggle Visibility</h2>
+<div id="visibilityBox" style="visibility:visible;">Visible Element</div>
+<button id="btnToggleVisibility">Toggle Visibility</button>
+<!-- Example 061 -->
+<h2>061. Count Number of <code>&lt;div&gt;</code></h2>
+<button id="btnCountDivs">Count Divs</button>
+<p id="divCountResult"></p>
+
+<!-- Example 062 -->
+<h2>062. Reset a Form</h2>
+<form id="formToReset">
+  <input type="text" value="Hello">
+  <input type="checkbox" checked>
+</form>
+<button id="btnResetForm">Reset Form</button>
+
+<!-- Example 063 -->
+<h2>063. Scroll to Top</h2>
+<button id="btnScrollTop">Scroll to Top</button>
+
+<!-- Example 064 -->
+<h2>064. Add Option to Select</h2>
+<select id="selectBox">
+  <option>Option 1</option>
+</select>
+<button id="btnAddOption">Add Option</button>
+
+<!-- Example 065 -->
+<h2>065. Remove Last Option</h2>
+<button id="btnRemoveOption">Remove Option</button>
+
+<!-- Example 066 -->
+<h2>066. Set Page Title</h2>
+<button id="btnSetTitle">Set Title</button>
+
+<!-- Example 067 -->
+<h2>067. Count Checked Checkboxes</h2>
+<input type="checkbox" checked> A
+<input type="checkbox"> B
+<input type="checkbox" checked> C
+<button id="btnCountChecked">Count Checked</button>
+<p id="checkedCount"></p>
+
+<!-- Example 068 -->
+<h2>068. Show Current Date and Time</h2>
+<button id="btnShowDate">Show Date</button>
+<p id="dateDisplay"></p>
+
+<!-- Example 069 -->
+<h2>069. Append List Item</h2>
+<ul id="dynamicList">
+  <li>Existing Item</li>
+</ul>
+<button id="btnAppendListItem">Add Item</button>
+
+<!-- Example 070 -->
+<h2>070. Clone Input Field</h2>
+<input type="text" id="inputToClone" value="Clone Me">
+<div id="cloneInputContainer"></div>
+<button id="btnCloneInput">Clone Input</button>
+<!-- Example 071 -->
+<h2>071. Disable All Inputs & Buttons</h2>
+<input type="text" value="Sample">
+<button>Click</button>
+<button id="btnDisableAll">Disable All</button>
+
+<!-- Example 072 -->
+<h2>072. Enable All Inputs & Buttons</h2>
+<button id="btnEnableAll">Enable All</button>
+
+<!-- Example 073 -->
+<h2>073. Highlight Odd Table Rows</h2>
+<table border="1">
+  <tr><td>Row 1</td></tr>
+  <tr><td>Row 2</td></tr>
+  <tr><td>Row 3</td></tr>
+</table>
+<button id="btnHighlightRows">Highlight Odd Rows</button>
+
+<!-- Example 074 -->
+<h2>074. Slide + Fade Toggle Box</h2>
+<div id="slideFadeBox" style="padding:10px;background:#ddd;">Slide + Fade</div>
+<button id="btnSlideFadeToggle">Toggle Slide + Fade</button>
+
+<!-- Example 075 -->
+<h2>075. Append HTML Content</h2>
+<div id="htmlAppendTarget">Content: </div>
+<button id="btnAppendHTML">Append HTML</button>
+
+<!-- Example 076 -->
+<h2>076. Convert Text to UPPERCASE</h2>
+<input type="text" id="textUpper" placeholder="type something">
+<button id="btnUppercase">To Uppercase</button>
+
+<!-- Example 077 -->
+<h2>077. Convert Text to lowercase</h2>
+<input type="text" id="textLower" placeholder="type something">
+<button id="btnLowercase">To Lowercase</button>
+
+<!-- Example 078 -->
+<h2>078. Toggle Attribute</h2>
+<div id="toggleAttr">Click to toggle 'data-active'</div>
+<button id="btnAttrToggle">Toggle Attr</button>
+
+<!-- Example 079 -->
+<h2>079. Check All Checkboxes</h2>
+<input type="checkbox"> Option A
+<input type="checkbox"> Option B
+<button id="btnEachCheckbox">Check All</button>
+
+<!-- Example 080 -->
+<h2>080. Character Counter</h2>
+<input type="text" id="btnCharCount" placeholder="Type...">
+<p id="charCountResult">Characters: 0</p>
+<!-- Example 081 -->
+<h2>081. Hide Parent Element</h2>
+<div>
+  <button id="btnHideParent">Hide My Parent</button>
+</div>
+
+<!-- Example 082 -->
+<h2>082. Disable All Other Buttons</h2>
+<button id="btnDisableOthers">Disable Others</button>
+<button>Extra 1</button>
+<button>Extra 2</button>
+
+<!-- Example 083 -->
+<h2>083. Set Random Background Color</h2>
+<div id="randomBg" style="padding:10px;background:#ccc;">Random Color</div>
+<button id="btnSetRandomBg">Change Color</button>
+
+<!-- Example 084 -->
+<h2>084. Reverse List Items</h2>
+<ul id="reverseList">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+<button id="btnReverseList">Reverse List</button>
+
+<!-- Example 085 -->
+<h2>085. Toggle Readonly</h2>
+<input type="text" id="readOnlyInput" value="Text">
+<button id="btnToggleReadOnly">Toggle Readonly</button>
+
+<!-- Example 086 -->
+<h2>086. Add Row to Table</h2>
+<table id="rowTable" border="1">
+  <tr><td>Initial Row</td></tr>
+</table>
+<button id="btnAddRow">Add Row</button>
+
+<!-- Example 087 -->
+<h2>087. Sum All Text Input Values</h2>
+<input type="text" class="sumInput" value="5">
+<input type="text" class="sumInput" value="10">
+<p id="sumResult"></p>
+<button id="btnSumInputs">Sum Values</button>
+
+<!-- Example 088 -->
+<h2>088. Disable First Text Input</h2>
+<input type="text" value="First">
+<input type="text" value="Second">
+<button id="btnDisableFirst">Disable First</button>
+
+<!-- Example 089 -->
+<h2>089. Add Paragraph Before</h2>
+<p id="targetPara">Target Paragraph</p>
+<button id="btnAddBeforePara">Add Before</button>
+
+<!-- Example 090 -->
+<h2>090. Add Paragraph After</h2>
+<button id="btnAddAfterPara">Add After</button>
+<!-- Example 091 -->
+<h2>091. Slide Down & Up</h2>
+<div id="slideBox" style="display:none; background:#ccc; padding:10px;">Slide Me</div>
+<button id="btnSlideDownUp">Slide Down & Up</button>
+
+<!-- Example 092 -->
+<h2>092. Fade Out & In</h2>
+<div id="fadeLoopBox" style="background:#eee; padding:10px;">Fade Box</div>
+<button id="btnFadeLoop">Fade Loop</button>
+
+<!-- Example 093 -->
+<h2>093. List All Attributes</h2>
+<div id="attrLister" data-info="value" title="Tooltip">Sample Element</div>
+<button id="btnAttrList">Show Attributes</button>
+
+<!-- Example 094 -->
+<h2>094. Wrap Text with Bold</h2>
+<span id="makeBoldText">Make me bold</span>
+<button id="btnMakeBold">Wrap Bold</button>
+
+<!-- Example 095 -->
+<h2>095. Move Box Right</h2>
+<div id="moveBox" style="width:50px;height:50px;background:red;position:relative;"></div>
+<button id="btnMoveBox">Move Right</button>
+
+<!-- Example 096 -->
+<h2>096. Count Words in Input</h2>
+<input type="text" id="wordCounter" value="Count these words">
+<p id="wordCountResult"></p>
+<button id="btnCountWords">Count Words</button>
+
+<!-- Example 097 -->
+<h2>097. Change First & Last List Items</h2>
+<ul id="firstLastList">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Cherry</li>
+</ul>
+<button id="btnFirstLastChange">Change First & Last</button>
+
+<!-- Example 098 -->
+<h2>098. Add Class by Attribute</h2>
+<p data-role="highlight">Highlight me</p>
+<button id="btnAttrAddClass">Add Highlight Class</button>
+
+<!-- Example 099 -->
+<h2>099. Disable Elements by Class</h2>
+<input class="toDisable" value="One">
+<input class="toDisable" value="Two">
+<button id="btnDisableByClass">Disable Inputs</button>
+
+<!-- Example 100 -->
+<h2>100. Fade & Remove Element</h2>
+<div id="toRemove" style="padding:10px;background:#f88;">Remove Me</div>
+<button id="btnFadeAndRemove">Fade & Remove</button>
+
+
+
+  <!-- ... (Continue like this up to 100) ... -->
+
+   </div>
+    <!-- JS Links -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery-examples.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
